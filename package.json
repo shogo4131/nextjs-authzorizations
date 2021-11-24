@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:css:fix": "stylelint --fix src/**/*.css",
     "storybook": "start-storybook -p 6006",

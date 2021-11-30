@@ -1,9 +1,23 @@
 {
+  "env": {
+    "es6": true,
+    "node": true
+  },
   "extends": [
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier"
-  ]
+  ],
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": ["error"],
+    // next/linkのLinkコンポーネントでhrefが不要なため
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "invalidHref", "preferButton" ]
+    }]
+  }
 }

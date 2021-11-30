@@ -3,3 +3,4 @@
 
 yarn lint
 yarn lint:css
+yarn check-lint

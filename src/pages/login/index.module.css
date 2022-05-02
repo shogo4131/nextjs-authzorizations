@@ -1,0 +1,13 @@
+.root {
+  height: 100vh;
+  background-color: aqua;
+}
+
+.card {
+  width: 700px;
+  height: 400px;
+}
+
+.form {
+  width: 400px;
+}
